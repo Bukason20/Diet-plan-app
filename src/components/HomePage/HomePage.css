@@ -222,9 +222,25 @@
     .hero-content h2{
         font-size: 2rem;
         line-height: 2.5rem;
+        text-align: center;
     }
     .hero-content p{
         font-size: 0.9rem;
+        text-align: center;
+    }
+    .hero-btn{
+        background-color: #58D68D;
+        border: none;
+        outline: none;
+        padding: 0.8rem 2rem;
+        border-radius: 8px;
+        color: white;
+        width: 250px;
+        cursor: pointer;
+        text-decoration: none;
+        display: block;
+        margin: auto;
+        text-align: center;
     }
     #hero-img{
         width: 350px;

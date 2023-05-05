@@ -1,15 +1,41 @@
 import "./BmiInfo.css"
 import World from "../../images/cuate.png"
+import { useEffect, useState } from "react"
 
 function BmiInfo() {
+
+    const storedBMI = JSON.parse(localStorage.getItem("BMI"));
+    // const initialBMI = storedBMI ? JSON.parse(storedBMI) : 0;
+    const [bmi, setBMI] = useState(isNaN(storedBMI) ? 0 : storedBMI); 
+    const [weightRange, setWeightRange] = useState();
+
+
+    // if (!isNaN(bmi)) {
+
+    const checkWeightRange = () => {
+        if (bmi < 18.5) {
+            setWeightRange("Underweight");
+        } else if (bmi >= 18.5 && bmi < 25) {
+            setWeightRange("Normal weight");
+        } else if (bmi >= 25 && bmi < 30) {
+            setWeightRange("Overweight");
+        } else if (bmi >= 30) {
+            setWeightRange("Obese");
+        }
+    }
+
+    useEffect(() => {
+        checkWeightRange()
+    }, [bmi])
+    
     return (
         <div className= "bmiInfo-container">
             
             <img src= {World} alt="A world image" id= "world"/>
             <h1 id= "hello">Hello!</h1>
             <div className="bmi-info">
-            <   p id= "weight-result">Your BMI results says you are overWeight</p>
-                <p id= "bmi-score">Your BMI score is 17.5</p>
+            <p id= "weight-result">Your BMI results says you are {weightRange}</p>
+                <p id= "bmi-score">Your BMI score is {bmi}</p>
                 <p>This means that you do not have enough body fat, and as such prone to malnutrition, decreased muscle strength, low immunity and lot more.</p>
                 <p id="symptoms">Symptoms:</p>
                 <ul className = "symptoms-list">

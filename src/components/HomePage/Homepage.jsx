@@ -109,8 +109,74 @@ function Homepage() {
                     </div>
                 </div>
             </section>
+
+            {/* -----------------------------------------------------------------------SUBSCRIBE SECTION--------------------------------------------------- */}
+            <section className="subscribe-container">
+                <div className="subscribe-contents">
+                    <h2>NEW TO FEEDFIT?</h2>
+                    <p>Subscribe to our newsletter to get updates on our latest offer</p>
+                </div>
+
+                <div className="subscribe-form">
+                    <input type="email" placeholder= "Email Address"/>
+                    <button>Subscribe</button>
+                </div>
+
+                <img src= {Logo} alt="" id = "subscribe-logo"/>
+            </section>
+
+            {/* ----------------------------------------------------------------------------FOOTER SECTION--------------------------------------- */}
             <footer className = "footer-container">
-                <h1>Footer</h1>
+                <div className="footer-about">
+                    <h4>About FeedFit</h4>
+                    <p>About Us</p>
+                    <p>Careers</p>
+                    <p>Our Blog</p>
+                    <p>News</p>
+                    <p>FeedFit Global</p>
+                    <p>Contact</p>
+                </div>
+
+                <div className="footer-resources">
+                    <h4>Resources</h4>
+                    <p>Blog</p>
+                    <p></p>
+                    <p>Newsletter</p>
+                    <p>Official store</p>
+                    <p>Help centre</p>
+                    <p>FAQs</p>
+                    <p>Make Payments</p>
+                </div>
+
+                <div className="footer-legal">
+                    <h4>Legal</h4>
+                    <p>Terms</p>
+                    <p>Privacy Policy</p>
+                    <p>Buy on FeedFit</p>
+                    <p>Delivery</p>
+                    <p>Return Policy</p>
+                    <p>Report a product</p>
+                </div>
+
+                <div className="footer-legal">
+                    <h4>Legal</h4>
+                    <p>Terms</p>
+                    <p>Privacy Policy</p>
+                    <p>Buy on FeedFit</p>
+                    <p>Delivery</p>
+                    <p>Return Policy</p>
+                    <p>Report a product</p>
+                </div>
+
+                <div className="footer-legal">
+                    <h4>Legal</h4>
+                    <p>Terms</p>
+                    <p>Privacy Policy</p>
+                    <p>Buy on FeedFit</p>
+                    <p>Delivery</p>
+                    <p>Return Policy</p>
+                    <p>Report a product</p>
+                </div>
 
             </footer>
 

@@ -6,9 +6,9 @@ import { Link, useHistory } from "react-router-dom";
 
 function BMICalculator() {
 
-    const [age, setAge] = useState()
-    const [height, setHeight] = useState()
-    const [weight, setWeight] = useState()
+    const [age, setAge] = useState(1)
+    const [height, setHeight] = useState(1)
+    const [weight, setWeight] = useState(1)
     const [BMI, setBMI] = useState()
 
     const history = useHistory()
@@ -20,10 +20,13 @@ function BMICalculator() {
     // console.log(nums)
     
     const calcultateBMI = (a, b) => {
-        let result = ((Number(a)/ Number(b * b)) * 10000)
-        let bmi = result.toFixed(1)
-        localStorage.setItem("BMI", bmi)
-    }
+        const weightNum = parseFloat(a);
+        const heightNum = parseFloat(b);
+        let result = ((weightNum / (heightNum * heightNum)) * 10000);
+        let bmi = result.toFixed(1);
+        localStorage.setItem("BMI", bmi);
+    };
+    
 
     // calcultateBMI(16.9, 105.4)
 

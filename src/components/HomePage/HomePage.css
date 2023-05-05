@@ -1,0 +1,156 @@
+
+
+/* --------------------------------------SEARCH FEATURE--------------------------------------- */
+.search{
+    padding: 3rem 0;
+}
+.search input{
+    margin: auto;
+    display: block;
+    border: 1px solid #58D68D;
+    width: 400px;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+}
+
+
+/* -----------------------------------------HERO CONTAINER SECTION-------------------------- */
+.hero-container{
+    background-color: #f7f7f7;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 0 2rem;
+    height: 90vh;
+    gap: 1rem;
+}
+.hero-content h2{
+    font-size: 2.5rem;
+    max-width: 500px;
+    line-height: 3.5rem;
+}
+.hero-content p{
+    max-width: 400px;
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem;
+    line-height: 1.5rem;
+}
+.hero-content button{
+    background-color: #58D68D;
+    border: none;
+    outline: none;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    color: white;
+    width: 150px;
+    cursor: pointer;
+}
+#hero-img{
+    height: 100%;
+    width: 500px;
+    object-fit: cover;
+}
+
+/* -----------------------------------------------FEATURED PRODUCT SECTION----------------------------------- */
+.feature-container{
+    padding: 2rem;
+}
+.feature-container h2{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+.features{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    /* background-color: orange */
+    padding: 0 1rem;
+    
+}
+.feature{
+    height: 80%;
+    /* background-color: orchid; */
+    box-shadow: 0 4px 8px 0 rgba(82, 81, 81, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top-right-radius: 70px;
+    border-top-left-radius: 10px;
+}
+.feature-img{
+    background-color: rgba(222,247,232, 0.6);
+    height: 85%;
+    padding: 1rem 0;
+   
+}
+.feature-img img{
+    height: 90%;
+    margin: auto;
+    display: block;
+}
+
+
+/* ------------------------------------------------SERVICES SECTION----------------------------------------------- */
+.service-container{
+    /* padding: 2rem; */
+}
+.service-container h2{
+    margin: 0 0 2rem 2rem;
+    font-size: 1.8rem;
+
+}
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #f7f7f7;
+    padding: 3rem;
+    gap: 1rem;
+    text-align: center;
+}
+.service-img{
+    width: fit-content;
+    background-color: white;
+    border-radius: 50%;
+    margin: auto;
+}
+.service-img img{
+    height: 100px;
+}
+.service h3{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+.service p{
+    max-width: 400px;
+    margin: auto;
+    line-height: 1.5rem;
+}
+
+
+/* -----------------------------------------------------TESTIMONIAL SECTION------------------------------------------------------------ */
+.testimonial-container{
+    padding: 3rem;
+}
+.testimonial-container .title{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem
+}
+
+#testimonial-img{
+    height: 500px;
+}
+
+
+/* -----------------------------------------------------------------------FOOTER SECTION----------------------------------------------- */
+.footer-container{
+    background-color: #0A9c48;
+    height: 50vh;
+}
+
+/* ---------------------------------------------------------MEDIA QUERY FOR SMALL DEVICES----------------------------------------- */
+

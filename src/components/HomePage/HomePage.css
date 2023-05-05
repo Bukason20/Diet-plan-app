@@ -223,7 +223,7 @@
     /* --------------------------------------------------------HERO-CONTAINER----------------------------------- */
     .hero-container{
         grid-template-columns: repeat(1, 1fr);
-        padding: 0 1rem;
+        padding: 2rem 1rem 0;
     }
     .hero-content h2{
         font-size: 2rem;

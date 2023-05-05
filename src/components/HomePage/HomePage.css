@@ -146,12 +146,58 @@
 #testimonial-img{
     height: 500px;
 }
+/* ------------------------------------------------------------------SUBSCRIBE CONTAINER------------------------------------------------------ */
+.subscribe-container{
+    background-color: #58D68D;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.subscribe-form input{
+    border: none;
+    outline: none;
+    padding: 0.5rem 2rem;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.subscribe-form input::placeholder{
+    color: #58D68D;
+}
+.subscribe-form button{
+  border: none;
+  outline: none;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid white;  
+  padding: 0 1.5rem;
+  cursor: pointer;
+}
+#subscribe-logo{
+    display: none;
+}
 
 
 /* -----------------------------------------------------------------------FOOTER SECTION----------------------------------------------- */
 .footer-container{
     background-color: #0A9c48;
-    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 3rem;
+}
+.footer-container h4{
+    margin-bottom: 0.8rem;
+    color: white;
+}
+
+.footer-container p{
+    margin-bottom: 0.5rem;
+    color: #e9e9e9;
+    font-size: 0.8rem;
 }
 
 /* ---------------------------------------------------------MEDIA QUERY FOR SMALL DEVICES----------------------------------------- */
@@ -230,5 +276,23 @@
         object-fit: cover;
         margin: auto;
         display: block;
+    }
+
+    /* ------------------------------------------------------------------SUBSCRIBE CONTAINER------------------------------------------------------ */
+    .subscribe-container{
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+    }
+    .subscribe-contents, .subscribe-form{
+        display: none;
+    }
+    #subscribe-logo{
+        display: block;
+    }
+
+    /* ------------------------------------------------------------------------FOOTER SECTION---------------------------------------------- */
+    .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 }

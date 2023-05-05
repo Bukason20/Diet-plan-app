@@ -1,0 +1,31 @@
+body{
+    /* background-color: orange; */
+}
+
+.modal-container{
+    background-color: white;
+    border-radius: 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 300;
+    width: 45%;
+    height: 80vh;
+    padding: 1rem;
+
+}
+.modal-close{
+    color: red;
+    width: fit-content;
+    margin-left: auto;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* --------------------------------------------MEDIA QUERY SMALL DEVICES------------------------------------ */
+@media screen and (max-width: 600px){
+    .modal-container{
+        width: 80%;
+    }
+}

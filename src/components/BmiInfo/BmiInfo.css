@@ -5,6 +5,10 @@
     background-position: center;
     /* background-color: blue; */
 }
+.bmiInfo-container.darken{
+    background:linear-gradient(gray, black);
+    overflow: hidden;
+}
 #world{
     margin: auto;
     display: block;

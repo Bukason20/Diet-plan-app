@@ -1,6 +1,11 @@
 import "./BmiInfo.css"
 import World from "../../images/cuate.png"
 import { useEffect, useState } from "react"
+import Modal from "../Modal/Modal";
+import UnderWeight from "../../Weight Ranges/UnderWeight";
+import OverWeight from "../../Weight Ranges/OverWeight";
+import Obesity from "../../Weight Ranges/Obesity";
+import { Link } from "react-router-dom";
 
 function BmiInfo() {
 
@@ -8,6 +13,7 @@ function BmiInfo() {
     // const initialBMI = storedBMI ? JSON.parse(storedBMI) : 0;
     const [bmi, setBMI] = useState(isNaN(storedBMI) ? 0 : storedBMI); 
     const [weightRange, setWeightRange] = useState();
+    const [showModal, setShowModal] = useState(false);
 
 
     // if (!isNaN(bmi)) {
@@ -29,7 +35,7 @@ function BmiInfo() {
     }, [bmi])
     
     return (
-        <div className= "bmiInfo-container">
+        <div className= {` bmiInfo-container ${showModal && "darken"}`}>
             
             <img src= {World} alt="A world image" id= "world"/>
             <h1 id= "hello">Hello!</h1>
@@ -65,11 +71,25 @@ function BmiInfo() {
             </div>
             <div className="meal-plans">
                 <p>Would you like to get more professional assistance like work out and diet plans suited for you? Click on the button below and click the button below and begin your healthy journey today</p>
-                <button>Get a meal plan</button>
+                <button onClick = {() => setShowModal(true)}>Get a meal plan</button>
             </div>
-            
+            <Link to = "/">Go to Home</Link>
+
+         {showModal && (
+            <Modal showModal = {showModal} setShowModal = {setShowModal}>
+                {weightRange == "Underweight" ? <UnderWeight /> : "" }
+                {weightRange == "Overweight" ? <OverWeight /> : "" }
+                {weightRange == "Obese" ? <Obesity /> : ""}
+             
+ 
+            </Modal>
+        )
+             
+         }
             
         </div>
+
+       
     
     )
 }

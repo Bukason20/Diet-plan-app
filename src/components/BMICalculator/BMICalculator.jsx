@@ -77,9 +77,7 @@ function BMICalculator() {
                                 <option value = {num} key={id}>{num}</option>
                             ))}
                         </select>
-                        <select name="" id="">
-                            <option value="kg">kg</option>
-                        </select>
+                        <span>Kg</span>
                     </div>
 
                     <div className="input-group">
@@ -89,9 +87,7 @@ function BMICalculator() {
                                 <option value = {num} key={id}>{num}</option>
                             ))}
                         </select>
-                        <select name="" id="">
-                            <option value="kg">cm</option>
-                        </select>
+                        <span>cm</span>
                     </div>
                     
                     <button type="submit" className = "bmiCalc-btn">Calculate BMI</button>

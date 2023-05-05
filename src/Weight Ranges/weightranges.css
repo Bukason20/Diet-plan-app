@@ -1,0 +1,30 @@
+.weight-ranges h2{
+    text-align: center;
+}
+
+.recipe{
+    margin-bottom: 1rem;
+}
+.recipe-name{
+    margin: 0.5rem 0;
+    font-weight: bold;
+    color: #58D68D;
+}
+.recipe-procedures{
+    margin-left: 0.5rem;
+}
+.ingredients p{
+    text-decoration: underline;
+}
+.ingredients li, .instructions li{
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    margin-top: 0.4rem;
+}
+
+.instructions{
+    margin-top: 0.5rem;
+}
+.instructions p{
+    text-decoration: underline;
+}

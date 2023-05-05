@@ -1,5 +1,7 @@
 import "./BmiInfo.css"
 import World from "../../images/cuate.png"
+import Sorry from "../../images/overweight.png"
+import HighFive from "../../images/high-five.png"
 import { useEffect, useState } from "react"
 import Modal from "../Modal/Modal";
 import UnderWeight from "../../Weight Ranges/UnderWeight";
@@ -15,7 +17,7 @@ function BmiInfo() {
     const [weightRange, setWeightRange] = useState();
     const [showModal, setShowModal] = useState(false);
     const healthyWeight = ["Drinking Lots of water", "Regular Workouts", "Regularly Check Your BMI", "Eat Helthy"]
-    const ObesityRisks = ["High Blodd Pressure", "Asthma", "Type 2 Diabetes", "Cholestrol" ]
+    const ObesityRisks = ["High Blood Pressure", "Asthma", "Type 2 Diabetes", "Cholestrol" ]
     const skinnyRisks = ["Fatigue", "Amenia", "Skin, hair and teeth Problems", "Impaired growth"]
 
 
@@ -40,13 +42,13 @@ function BmiInfo() {
     return (
         <div className= {` bmiInfo-container ${showModal && "darken"}`}>
             
-            <img src= {World} alt="A world image" id= "world"/>
+            <img src= {weightRange == "Underweight" ? World : weightRange == "Healthy weight" ? HighFive : Sorry } alt="A world image" id= "weight-img"/>
             {weightRange == <h1 id= "hello">Hello!</h1>}
             <div className="bmi-info">
             <p id= "weight-result">Your BMI results says you are {weightRange}</p>
                 <p id= "bmi-score">Your BMI score is <span style = {{color: weightRange == "Healthy weight" ? "green" : "red"}} className = "your-score">{bmi}</span></p>
                 <p id = "bmi-details">This means that you do not have enough body fat, and as such prone to malnutrition, decreased muscle strength, low immunity and lot more.</p>
-                {weightRange == "Healthy weight" ? <p>Maintain you Weight By:</p> : <p id="symptoms">Health Risks:</p>}
+                {weightRange == "Healthy weight" ? <p className = "symptoms">Maintain you Weight By:</p> : <p className="symptoms">Health Risks:</p>}
 
 
                 <ul className = "symptoms-list">

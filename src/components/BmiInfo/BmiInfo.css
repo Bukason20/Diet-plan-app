@@ -9,8 +9,8 @@
     background:linear-gradient(gray, black);
     overflow: hidden;
 }
-#world{
-    margin: auto;
+#weight-img{
+    margin: 2rem auto 1rem ;
     display: block;
 }
 #hello{
@@ -35,7 +35,7 @@
 #bmi-score{
     margin-bottom: 0.5rem;
 }
-#symptoms{
+.symptoms{
     margin-top: 1rem;
 }
 .symptoms-list{
@@ -88,6 +88,7 @@
     border-radius: 8px;
     cursor: pointer;
     width: 250px;
+    font-size: 1rem ;
 }
 .home-btn{
     background-color: #58D68D;
@@ -129,4 +130,10 @@
     #advice{
         max-width: 300px;
     }
+    .symptoms-list{
+        text-align: center;
+        width: fit-content;
+        margin: auto;
+    }
+    
 }

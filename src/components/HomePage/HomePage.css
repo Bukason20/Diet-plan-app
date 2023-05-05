@@ -66,8 +66,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    /* background-color: orange */
     padding: 0 1rem;
+    align-items: center;
     
 }
 .feature{
@@ -156,3 +156,79 @@
 
 /* ---------------------------------------------------------MEDIA QUERY FOR SMALL DEVICES----------------------------------------- */
 
+@media screen and (max-width: 600px){
+    /* --------------------------------------SEARCH FEATURE--------------------------------------- */
+    .search{
+        padding: 2rem 0;
+    }
+    .search input{
+        width: 200px;
+        outline: none;
+        padding: 0.5rem 1.5rem;
+    }
+
+
+    /* --------------------------------------------------------HERO-CONTAINER----------------------------------- */
+    .hero-container{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 1rem;
+    }
+    .hero-content h2{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .hero-content p{
+        font-size: 0.9rem;
+    }
+    #hero-img{
+        width: 350px;
+        margin: auto;
+    }
+
+    /* ------------------------------------------------------------FEATURED-CONTAINER------------------------------ */
+    .feature-container h2{
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.2rem !important;
+        /* background-color: green; */
+        overflow: hidden;
+    }
+    .feature{
+        height: 80%;
+        overflow: hidden !important;
+    }
+    .feature-img img{
+        height: 60%;
+        display: block;
+        
+    }
+
+    /* ----------------------------------------------------------------------SERVICE-CONTAINER--------------------------------- */
+    .service-container h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .services{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .service p{
+        max-width: 300px;
+        line-height: 1.5rem;
+    }
+
+    /* ------------------------------------------------------------------------------TESTIMONIAL CONTAINER------------------------------ */
+    .testimonials{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #testimonial-img{
+        height: 400px;
+        /* width: 250px; */
+        object-fit: cover;
+        margin: auto;
+        display: block;
+    }
+}

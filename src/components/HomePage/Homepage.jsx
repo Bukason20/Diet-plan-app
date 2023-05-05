@@ -29,7 +29,7 @@ function Homepage() {
             <section className="hero-container">
                 <div className="hero-content">
                     <h2>Let's Begin Your Diet Planning Today</h2>
-                    <p>Achieve your weight goals and improve your overall health with our customized plans tailored to your specific needs</p>
+                    <p>Achieve your weight goals and improve your overall health with our customized plans tailored to your specific needs by using our BMI calculator</p>
                     <Link to = "/BMI-calculator" className= "hero-btn">Get started</Link>
                 </div>
                 <img src= {HeroImg} alt="" id= "hero-img"/>

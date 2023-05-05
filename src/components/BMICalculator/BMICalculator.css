@@ -44,3 +44,28 @@
     text-align: center;
 
 }
+
+/* ---------------------------------------------------------MEDIA QUERY FOR SMALL DEVICES----------------------------------------- */
+
+@media screen and (max-width: 600px){
+    .calculator{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #personImg{
+        width: 180px;
+        margin: auto;
+    }
+    form{
+        margin: auto;
+        display: block;
+        /* background-color: orange; */
+        /* text-align: center; */
+        width: 250px;
+    }
+    .main-input{
+        width: 200px;
+    }
+    .bmiCalc-btn{
+        width: 200px;
+    }
+}

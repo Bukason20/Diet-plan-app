@@ -2,15 +2,40 @@ import { useState } from "react";
 import NavBar from "../NavBar/NavBar";
 import Person from "../../images/person.png"
 import "./BMICalculator.css"
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 function BMICalculator() {
 
-    const [age, setAge] = useState(0)
+    const [age, setAge] = useState()
+    const [height, setHeight] = useState()
+    const [weight, setWeight] = useState()
+    const [BMI, setBMI] = useState()
+
+    const history = useHistory()
+    let nums = []
+
+    for(let i = 1; i <= 1000; i++){
+        nums.push(i)
+    }
+    // console.log(nums)
     
-    // for(let i = 0; i < 2; i++){
-    //     setAge(i)
-    // }
+    const calcultateBMI = (a, b) => {
+        let result = ((Number(a)/ Number(b * b)) * 10000)
+        let bmi = result.toFixed(1)
+        localStorage.setItem("BMI", bmi)
+    }
+
+    // calcultateBMI(16.9, 105.4)
+
+    const submitForm = (e) => {
+        calcultateBMI(weight, height)
+        console.log(weight, height)
+        history.push("/BMI-info")
+        
+
+        e.preventDefault()
+    }
+    
     return (
         <div>
             <div className="calc-nav">
@@ -24,7 +49,7 @@ function BMICalculator() {
                 <img src= {Person} alt="" id= "personImg"/>
                 
 
-                <form>
+                <form onSubmit = {submitForm}>
                     <div className="input-group">
                         <label>Select Gender</label>
                         <select name="" id="" className = "main-input">
@@ -35,15 +60,19 @@ function BMICalculator() {
 
                     <div className="input-group">
                         <label>Age</label>
-                        <select name="" id="" className = "main-input">
-                            <option value="1">1</option>
+                        <select name="" id="" className = "main-input" defaultChecked = {age} onChange= {(e) => setAge(e.target.value)}>
+                            {nums.map((num, id) => (
+                                <option value = {num} key={id}>{num}</option>
+                            ))}
                         </select>
                     </div>
 
                     <div className="input-group">
                         <label>Weight</label>
-                        <select name="" id="" className = "main-input">
-                            <option value="1">1</option>
+                        <select name="" id="" className = "main-input" defaultChecked = {weight} onChange= {(e) => setWeight(e.target.value)} required>
+                            {nums.map((num, id) => (
+                                <option value = {num} key={id}>{num}</option>
+                            ))}
                         </select>
                         <select name="" id="">
                             <option value="kg">kg</option>
@@ -52,15 +81,17 @@ function BMICalculator() {
 
                     <div className="input-group">
                         <label>Height</label>
-                        <select name="" id="" className = "main-input">
-                            <option value="1">1</option>
+                        <select name="" id="" className = "main-input" defaultChecked = {height} onChange= {(e) => setHeight(e.target.value)} required>
+                            {nums.map((num, id) => (
+                                <option value = {num} key={id}>{num}</option>
+                            ))}
                         </select>
                         <select name="" id="">
                             <option value="kg">cm</option>
                         </select>
                     </div>
                     
-                    <Link to = "/BMI-info" className = "bmiCalc-btn">Calculate BMI</Link>
+                    <button type="submit" className = "bmiCalc-btn">Calculate BMI</button>
                 </form>
                                 
             </div>

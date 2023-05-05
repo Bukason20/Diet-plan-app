@@ -1,0 +1,46 @@
+#bmiCalc-title{
+    text-align: center;
+    margin-top: 2rem;
+}
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+#personImg{
+    width: 500px;
+}
+.input-group{
+    margin-bottom: 1rem;
+}
+.input-group label{
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.input-group select{
+    border: 1px solid #58D68D;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    outline: none;
+}
+.main-input{
+    width: 300px;
+    margin-right: 0.5rem;
+}
+.bmiCalc-btn{
+    background-color: #58D68D;
+    border: none;
+    outline: none;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    color: white;
+    width: 400px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    margin-top: 4rem;
+    text-align: center;
+
+}

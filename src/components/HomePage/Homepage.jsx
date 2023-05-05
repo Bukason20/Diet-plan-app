@@ -10,6 +10,7 @@ import Testimonial1 from "../../images/Testimonial1.png"
 import Testimonial2 from "../../images/Testimonial2.png"
 import Testimonial3 from "../../images/Testimonial3.png"
 import NavBar from "../NavBar/NavBar"
+import { Link } from "react-router-dom"
 
 
 function Homepage() {
@@ -29,7 +30,7 @@ function Homepage() {
                 <div className="hero-content">
                     <h2>Let's Begin Your Diet Planning Today</h2>
                     <p>Achieve your weight goals and improve your overall health with our customized plans tailored to your specific needs</p>
-                    <button>Get started</button>
+                    <Link to = "/BMI-calculator" className= "hero-btn">Get started</Link>
                 </div>
                 <img src= {HeroImg} alt="" id= "hero-img"/>
                

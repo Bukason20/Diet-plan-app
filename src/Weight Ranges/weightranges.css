@@ -16,10 +16,14 @@
 .ingredients p{
     text-decoration: underline;
 }
+.ingredients ul, .instructions ol{
+    /* overflow-x: visible; */
+}
 .ingredients li, .instructions li{
     font-size: 0.9rem;
     margin-left: 0.5rem;
     margin-top: 0.4rem;
+    /* overflow-x: visible; */
 }
 
 .instructions{

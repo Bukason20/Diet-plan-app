@@ -8,6 +8,7 @@ import UnderWeight from "../../Weight Ranges/UnderWeight";
 import OverWeight from "../../Weight Ranges/OverWeight";
 import Obesity from "../../Weight Ranges/Obesity";
 import { Link } from "react-router-dom";
+import HealthyWeight from "../../Weight Ranges/HealthyWeight"
 
 function BmiInfo() {
 
@@ -96,6 +97,7 @@ function BmiInfo() {
                 {weightRange == "Underweight" ? <UnderWeight /> : "" }
                 {weightRange == "Overweight" ? <OverWeight /> : "" }
                 {weightRange == "Obese" ? <Obesity /> : ""}
+                {weightRange == "Healthy weight" ? <HealthyWeight /> : ""}
              
  
             </Modal>

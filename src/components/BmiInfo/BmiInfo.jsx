@@ -20,6 +20,9 @@ function BmiInfo() {
     const ObesityRisks = ["High Blood Pressure", "Asthma", "Type 2 Diabetes", "Cholestrol" ]
     const skinnyRisks = ["Fatigue", "Amenia", "Skin, hair and teeth Problems", "Impaired growth"]
 
+    const underweightStatement = "This means that you do not have enough body fat, and as such prone to malnutrition, decreased muscle strength, low immunity and lot more."
+    const overweightStatement = "This means you have too much body fat and as such, are prone to breathing problems, excess blood sugar, fat congestion and a lot more"
+    const healthyweightStatement = "You are doing a good job. A healthy body helps increases overall productivity"
 
     // if (!isNaN(bmi)) {
 
@@ -47,11 +50,11 @@ function BmiInfo() {
             <div className="bmi-info">
             <p id= "weight-result">Your BMI results says you are {weightRange}</p>
                 <p id= "bmi-score">Your BMI score is <span style = {{color: weightRange == "Healthy weight" ? "green" : "red"}} className = "your-score">{bmi}</span></p>
-                <p id = "bmi-details">This means that you do not have enough body fat, and as such prone to malnutrition, decreased muscle strength, low immunity and lot more.</p>
-                {weightRange == "Healthy weight" ? <p className = "symptoms">Maintain you Weight By:</p> : <p className="symptoms">Health Risks:</p>}
-
-
-                <ul className = "symptoms-list">
+                <p id = "bmi-details">{weightRange == "Overweight" || weightRange == "Obese" ? overweightStatement : weightRange == "Healthy weight" ? healthyweightStatement : underweightStatement}</p>
+                
+                <div className="symptoms">
+                    {weightRange == "Healthy weight" ? <p>Maintain you Weight By:</p> : <p>Health Risks:</p>}
+                    <ul className = "symptoms-list">
                     
                     {weightRange == "Healthy weight" ? healthyWeights.map((weight, id) => <li key = {id}>{weight}</li>) 
                     
@@ -60,6 +63,9 @@ function BmiInfo() {
                     : skinnyRisks.map((risk, id) => <li id = {id}>{risk}</li>) }
                     
                 </ul>
+
+                </div>
+                
             </div>
             <div className="bmi-range">
                 <div className="range">

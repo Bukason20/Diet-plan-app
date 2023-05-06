@@ -37,6 +37,11 @@
 }
 .symptoms{
     margin-top: 1rem;
+    text-align: left;
+}
+.symptoms p{
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
 }
 .symptoms-list{
     /* background-color: orange; */
@@ -130,10 +135,16 @@
     #advice{
         max-width: 300px;
     }
-    .symptoms-list{
+    .symptoms{
+        width: fit-content;
+        margin: 1rem auto;
+        
+        
+    }
+    /* .symptoms-list{
         text-align: center;
         width: fit-content;
-        margin: auto;
-    }
+       
+    } */
     
 }

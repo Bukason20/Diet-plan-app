@@ -3,7 +3,19 @@
     background: url(../../images/BmiInfo-bg.png);
     background-size: cover;
     background-position: center;
+    position: relative;
     /* background-color: blue; */
+}
+.overlay{
+    background:linear-gradient(rgba(102, 101, 101, 0.3), rgba(0,0,0,0.6));
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.overlay.hide{
+    display: none;
 }
 .bmiInfo-container.darken{
     background:linear-gradient(gray, black);

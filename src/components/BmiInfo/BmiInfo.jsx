@@ -45,6 +45,9 @@ function BmiInfo() {
     
     return (
         <div className= {` bmiInfo-container ${showModal && "darken"}`}>
+            <div className= {`overlay ${!showModal && "hide"}`}>
+                
+            </div>
             
             <img src= {weightRange == "Underweight" ? World : weightRange == "Healthy weight" ? HighFive : Sorry } alt="A world image" id= "weight-img"/>
             {weightRange == <h1 id= "hello">Hello!</h1>}
@@ -57,7 +60,7 @@ function BmiInfo() {
                     {weightRange == "Healthy weight" ? <p>Maintain you Weight By:</p> : <p>Health Risks:</p>}
                     <ul className = "symptoms-list">
                     
-                    {weightRange == "Healthy weight" ? healthyWeights.map((weight, id) => <li key = {id}>{weight}</li>) 
+                    {weightRange == "Healthy weight" ? healthyWeight.map((weight, id) => <li key = {id}>{weight}</li>) 
                     
                     : weightRange == "Overweight" || weightRange == "Obese" ? ObesityRisks.map((risk, id) => <li key = {id}>{risk}</li>) 
                     

@@ -1,7 +1,7 @@
 import "./BmiInfo.css"
 import World from "../../images/cuate.png"
 import Sorry from "../../images/overweight.png"
-import HighFive from "../../images/high-five.png"
+import HighFive from "../../images/clap.png"
 import { useEffect, useState } from "react"
 import Modal from "../Modal/Modal";
 import UnderWeight from "../../Weight Ranges/UnderWeight";

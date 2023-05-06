@@ -5,54 +5,60 @@ function HealthyWeight() {
 
         <div className="recipes">
             <div className="recipe">
-                <p className= "recipe-name">1) Avocado Banana Smoothie</p>
+                <p className= "recipe-name">1) Grilled Salmon with Asparagus</p>
                 <div className="recipe-procedures">
                     <div className="ingredients">
                         <p>Ingredients:</p>
                         <ul>
-                            <li>1 ripe banana</li>
-                            <li>1 ripe avocado</li>
-                            <li>1 cup milk(or diary-free alternative)</li>
-                            <li>1 tablespoon honey</li>
-                            <li>1/2 tablespoon vanilla</li>
+                            <li>2 salmon fillets (6 oz each)</li>
+                            <li>Salt and pepper, to taste</li>
+                            <li>1 tablespoon olive oil</li>
+                            <li>1 pound asparagus, trimmed</li>
+                            <li>1 tablespoon lemon juice</li>
                         </ul>
                     </div>
 
                     <div className="instructions">
                         <p>Instructions:</p>
                         <ol>
-                            <li>Peel and slice the banana and avocado.</li>
-                            <li>Place the banana, avocado, milk, honey, and vanilla extract in a blender and blend until smooth.</li>
-                            <li>If the smoothie is too thick, add more milk until it reaches your desired consistency.</li>
-                            <li>Pour into a glass and serve immediately.</li>
+                            <li>Preheat grill to medium-high heat.</li>
+                            <li>Season salmon fillets with salt and pepper and brush with olive oil.</li>
+                            <li>Grill salmon for 4-5 minutes per side, until cooked through.</li>
+                            <li>Meanwhile, toss asparagus with 1 tablespoon olive oil and season with salt and pepper.</li>
+                            <li>Grill asparagus for 4-5 minutes, until tender-crisp.</li>
+                            <li>Drizzle asparagus with lemon juice and serve with grilled salmon.</li>
                         </ol>
                     </div>
                 </div>
             </div>
 
             <div className="recipe">
-                <p className= "recipe-name">2) Chicken and Sweet Potato Bowl</p>
+                <p className= "recipe-name">2) Quinoa Salad with Roasted Vegetables</p>
                 <div className="recipe-procedures">
                     <div className="ingredients">
                         <p>Ingredients:</p>
                         <ul>
-                            <li>1 sweet potato, peeled and diced</li>
-                            <li>1 boneless, skinless chicken breast, cut into small pieces</li>
-                            <li>1 tbsp olive oil</li>
-                            <li>1/2 tsp paprika</li>
+                            <li>1 cup quinoa</li>
+                            <li>2 cups mixed vegetables (such as sweet potatoes, bell peppers, and onions), cut into bite-sized pieces</li>
+                            <li>1 tablespoon olive oil</li>
                             <li>Salt and pepper, to taste</li>
                             <li>1/4 cup chopped fresh parsley</li>
+                            <li>1/4 cup chopped fresh mint</li>
+                            <li>1/4 cup crumbled feta cheese</li>
+                            <li>2 tablespoons lemon juice</li>
+                            <li>1 tablespoon honey</li>
+                            <li>1 tablespoon Dijon mustard</li>
                         </ul>
                     </div>
 
                     <div className="instructions">
                         <p>Instructions:</p>
                         <ol>
-                            <li>Preheat the oven to 400°F (200°C).</li>
-                            <li>Toss the sweet potato with olive oil, paprika, salt, and pepper. Spread the sweet potato in a single layer on a baking sheet.</li>
-                            <li>Roast the sweet potato for 20-25 minutes or until tender and lightly browned.</li>
-                            <li>Meanwhile, heat a pan over medium-high heat. Add the chicken and cook until browned and cooked through.</li>
-                            <li>Combine the chicken and sweet potato in a bowl. Top with chopped parsley and serve.</li>
+                            <li>Preheat oven to 400°F.</li>
+                            <li>Cook quinoa according to package instructions.</li>
+                            <li>Toss mixed vegetables with olive oil, salt, and pepper. Spread in a single layer on a baking sheet and roast for 20-25 minutes, stirring occasionally, until tender and slightly caramelized.</li>
+                            <li>In a large bowl, combine cooked quinoa, roasted vegetables, parsley, mint, and feta cheese.</li>
+                            <li>In a small bowl, whisk together lemon juice, honey, and Dijon mustard. Drizzle over quinoa salad and toss to combine.</li>
                         </ol>
                     </div>
                 </div>
